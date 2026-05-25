@@ -1,0 +1,170 @@
+QWidget {
+    background-color: {bg};
+    color: {text};
+    font-family: "Segoe UI";
+    font-size: 14px;
+}
+QScrollArea#center_scroll, QScrollArea#center_scroll > QWidget,
+QScrollArea#center_scroll > QWidget > QWidget,
+QScrollArea#left_scroll, QScrollArea#left_scroll > QWidget,
+QScrollArea#left_scroll > QWidget > QWidget,
+QScrollArea#help_scroll, QScrollArea#help_scroll > QWidget,
+QScrollArea#help_scroll > QWidget > QWidget,
+QScrollArea#history_scroll, QScrollArea#history_scroll > QWidget,
+QScrollArea#history_scroll > QWidget > QWidget {
+    background: transparent;
+    border: none;
+}
+QFrame#left_panel {
+    background: transparent;
+    border: none;
+}
+QFrame#header, QFrame#panel, QFrame#card {
+    background-color: {panel};
+    border: 1px solid {border};
+    border-radius: 10px;
+}
+QFrame#card {
+    background-color: {card};
+}
+QFrame#screen_frame {
+    background-color: {screen};
+    border: 1px solid {border};
+    border-radius: 10px;
+}
+QFrame#math_frame {
+    background-color: {panel};
+    border: 1px solid {border};
+    border-radius: 8px;
+}
+QLabel#title {
+    font-size: 23px;
+    font-weight: 700;
+}
+QLabel#subtitle, QLabel#body_text {
+    color: {muted};
+    font-size: 13px;
+    line-height: 1.35;
+}
+QLabel#card_title {
+    font-size: 18px;
+    font-weight: 700;
+}
+QLabel#section_label {
+    color: {muted};
+    font-weight: 700;
+}
+QLabel#integral_symbol {
+    font-size: 28px;
+    color: {accent};
+    font-family: Cambria Math;
+}
+QLabel#result_label {
+    color: {accent};
+    font-weight: 700;
+    font-size: 15px;
+}
+QComboBox, QLineEdit {
+    background-color: {input};
+    border: 1px solid {border};
+    border-radius: 7px;
+    padding: 7px 9px;
+    color: {text};
+    min-width: 150px;
+}
+QLineEdit#limit_input {
+    min-width: 58px;
+    max-width: 130px;
+    padding: 6px 6px;
+}
+QLineEdit#main_input {
+    font-size: 18px;
+    padding: 8px 10px;
+}
+QLineEdit:focus, QComboBox:focus {
+    border: 1px solid {accent};
+}
+QPushButton {
+    background-color: {button};
+    border: 1px solid {border};
+    border-radius: 7px;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: {text};
+}
+QPushButton:hover {
+    border-color: {accent};
+}
+QPushButton#btn_number { background-color: {number}; }
+QPushButton#btn_func {
+    background-color: {func};
+    color: {func_text};
+}
+QPushButton#btn_operator { background-color: {operator}; }
+QPushButton#btn_action { background-color: {action}; }
+QPushButton#btn_equals {
+    background-color: {accent};
+    color: white;
+    border-color: {accent};
+}
+QPushButton#btn_equals:hover {
+    background-color: {accent_hover};
+}
+QPushButton#btn_example {
+    background-color: {screen};
+    border-color: {border};
+    text-align: left;
+    padding: 10px 12px;
+}
+QPushButton#btn_example:hover {
+    background-color: {func};
+    color: {func_text};
+    border-color: {accent};
+}
+QPushButton#accordion_header {
+    background-color: {button};
+    border-color: {border};
+    text-align: left;
+    padding: 9px 10px;
+    font-weight: 700;
+}
+QPushButton#accordion_header:hover {
+    border-color: {accent};
+}
+QFrame#accordion_body {
+    background: transparent;
+    border: none;
+}
+QFrame#history_card {
+    background-color: {button};
+    border: 1px solid {border};
+    border-radius: 8px;
+}
+QFrame#history_card:hover {
+    border-color: {accent};
+}
+QLabel#history_result {
+    color: {muted};
+    font-size: 11px;
+}
+QLabel#history_empty {
+    color: {muted};
+    font-size: 12px;
+}
+QSplitter::handle {
+    background-color: transparent;
+}
+QPushButton#btn_clear_history {
+    background-color: transparent;
+    border: 1px solid {border};
+    color: {muted};
+    font-size: 12px;
+    padding: 6px;
+    margin-top: 6px;
+}
+QPushButton#btn_clear_history:hover {
+    border-color: {accent};
+    color: {accent};
+    background-color: {func};
+}
